@@ -1,0 +1,25 @@
+#!/usr/bin/ruby -w
+# frozen_string_literal: true
+
+require File.join(File.dirname(__FILE__), '../lib/world')
+
+world = World.new(
+  [
+    [0, 0, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ]
+)
+
+loop do
+  system('clear') || system('cls')
+  puts world.grid.map { |row| row.join(' ') }.join("\n")
+  sleep 0.1
+  world.evolve!
+end

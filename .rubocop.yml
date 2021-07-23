@@ -1,0 +1,6 @@
+AllCops:
+  NewCops: enable
+
+Metrics/MethodLength:
+  Exclude:
+    - 'test/*.rb'
