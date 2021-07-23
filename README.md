@@ -14,10 +14,6 @@ The application uses Ruby 3.0, and dependencies can be install by running:
 bundle install
 ```
 
-## Quality
-
-Code meets RuboCop's default recommendations, including all new cops.
-
 ## Tests
 
 100% test coverage, measured with SimpleCov — via a high level test in `test/world_test.rb`. Additional unit testing of individual classes would be preferable.
@@ -35,6 +31,10 @@ There is a sample shell script which can be run with:
 ```shell
 ./script/run
 ```
+
+## Quality
+
+Code meets RuboCop's default recommendations, including all new cops.
 
 ## License
 
