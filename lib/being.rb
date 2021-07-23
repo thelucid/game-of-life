@@ -9,10 +9,10 @@ class Being
   end
 
   def alive?
-    @state == :alive
+    state == :alive
   end
 
   def dead?
-    @state == :dead
+    state == :dead
   end
 end
