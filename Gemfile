@@ -9,3 +9,7 @@ end
 
 gem 'rake', '~> 12.0'
 gem 'rubocop', '~> 1.8', require: false
+
+gem 'rubocop-minitest', '~> 0.14.0'
+
+gem 'rubocop-rake', '~> 0.6.0'

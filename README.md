@@ -2,9 +2,11 @@
 
 A Game of Life implementation in Ruby. It consists of the following classes:
 
+* `Game` — Represents a game that evolves at a given interval.
 * `World` — Represents an evolving world with retrieval of beings.
 * `Being` — Represents a sentient being with state.
 * `Life` — Represents life at a given coordinate within a world.
+* `Renderer` — Represents the rendering of a grid using ascii.
 
 ## Install
 

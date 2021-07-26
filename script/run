@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require File.join(File.dirname(__FILE__), '../lib/game')
 require File.join(File.dirname(__FILE__), '../lib/world')
 
 world = World.new(
@@ -17,9 +18,4 @@ world = World.new(
   ]
 )
 
-loop do
-  system('clear') || system('cls')
-  puts world.grid.map { |row| row.join(' ') }.join("\n")
-  sleep 0.1
-  world.evolve!
-end
+Game.new(world: world).start!
