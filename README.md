@@ -18,7 +18,7 @@ bundle install
 
 ## Tests
 
-100% test coverage, measured with SimpleCov — via a high level test in `test/world_test.rb`. Additional unit testing of individual classes would be preferable.
+100% test coverage, measured with SimpleCov:
 
 ```shell
 rake test
