@@ -36,7 +36,7 @@ There is a sample shell script which can be run with:
 
 ## Quality
 
-Code meets RuboCop's default recommendations, including all new cops.
+Code meets RuboCop's default recommendations, including all new cops:
 
 ```shell
 rubocop
